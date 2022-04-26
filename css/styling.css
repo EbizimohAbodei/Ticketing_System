@@ -19,10 +19,27 @@ header {
   margin-bottom: 0.5rem;
 }
 
-a {
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+li a {
   padding: 0 0.5rem;
   font-size: 1.2rem;
   color: #5b3186;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+li a:hover {
+  text-decoration: underline;
+  font-size: 1.4rem;
 }
 
 body {
@@ -34,28 +51,37 @@ body {
 
 .formContainer h1,
 .loginContainer h1 {
-  color: #5f9ea0;
+  color: #022222;
   margin: 2rem;
+  font-size: 2.3rem;
   font-family: "Playfair Display", serif;
 }
 
-.createLabel {
+.createLabel,
+.contactLabel {
   margin-bottom: 2rem;
   font-size: 1.2rem;
   padding: 2rem;
-}
-
-.createInput {
-  height: 2rem;
+  text-align: left;
 }
 
 .createInput,
-.createTextarea {
-  width: 35rem;
-  margin: 1rem;
+.contactInput {
+  height: 2rem;
+  text-align: center;
 }
 
-.createButton {
+.createInput,
+.createTextarea,
+.contactInput,
+.contactTextarea {
+  width: 35rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.createButton,
+.contactButton {
   padding: 0.7rem;
   margin: 1rem 0;
 }
@@ -64,6 +90,8 @@ body {
 
 .welcomeText {
   margin: 1rem;
+  font-size: 2.3rem;
+  color: #022222;
 }
 
 .inputUpdate {
@@ -148,7 +176,8 @@ td {
 /* Styles for create page */
 
 .indexHeader,
-.loginHeader {
+.loginHeader,
+.contactContainer h1 {
   font-size: 2.3rem;
   padding: 1rem;
   color: #022222;
@@ -221,6 +250,8 @@ td {
   cursor: pointer;
   background-color: #8d9393;
 }
+
+/* Styles for contact */
 
 /* Styles for page footer */
 

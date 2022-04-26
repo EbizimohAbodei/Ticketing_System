@@ -14,9 +14,12 @@
     <header>
     <h1 class="pageHeader">Ticket Management System</h1>
     <nav>
-        <a href="index.php">Account</a>
-        <a href="create.php">Create-Ticket</a>
-        <?= $logged_in ? '<a href="logout.php">Log-Out</a>' : '<a href="login.php">Log-In</a>'; ?>
-        <a href="tickets.php">Tickets</a>
+        <ul>
+            <li><a href="index.php">Account</a></li>
+            <li><a href="create.php">Create-Ticket</a></li>
+            <li><?= $logged_in ? '<a href="logout.php">Log-Out</a>' : '<a href="login.php">Log-In</a>'; ?></li>
+            <li><a href="tickets.php">Tickets</a></li>
+            <li> <a href="contact.php">Contact</a></li>
+        </ul>
     </nav>
     </header>

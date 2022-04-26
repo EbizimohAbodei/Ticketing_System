@@ -49,11 +49,11 @@ if (isset($_POST["createTicket"])) {
         <form class="ticketForm" action="create.php" method="POST">
             <div>
             <label for="title" class="createLabel">Ticket Title/Subject:</label><br>
-            <input type="text" id="title" name="title" class="createInput"><br>
+            <input type="text" id="title" name="title" class="createInput" required><br>
             </div>
             <div>
             <label for="description" class="createLabel">Ticket Description:</label><br>
-            <textarea type="text" rows="17" cols="15" id="description" name="description" class="createTextarea"></textarea><br>
+            <textarea type="text" rows="17" cols="15" id="description" name="description" class="createTextarea" required></textarea><br>
             </div>
             <input class="createButton" name="createTicket" type="submit" value="Create Ticket">
         </form>

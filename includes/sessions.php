@@ -18,7 +18,7 @@ function logout() // Terminate the session
     session_destroy(); // Delete session file
 }
 
-function require_login($logged_in)  // Check if user logged in
+function require_login($logged_in) // Check if user logged in
 {
     if ($logged_in == false) {  // If not logged in
         header('Location: login.php');  // Send to login page
