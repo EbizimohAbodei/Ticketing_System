@@ -87,7 +87,7 @@ $firstname = $_COOKIE['PHPCookie'];
         <th>Description</th>
         <th>Created</th>
         <th>Created-by</th>
-        <th>Done</th>
+        <th>Mark Done</th>
         </tr>
         <tr>
         <?php
@@ -97,7 +97,7 @@ $firstname = $_COOKIE['PHPCookie'];
         <td class="description"><?= $ticket['description']?></td>
         <td class="created"><?= $ticket['dateCreated']?></td>
         <td class="Created-by"><?=$firstname?></td>
-        <td><a class="completeButton" href="tickets.php?compId=<?=$ticket['ticketId']?>&&subject=<?=$ticket['subject']?>"><i class="material-icons">done_all</i></a></td>
+        <td><a class="completeButton" href="tickets.php?compId=<?=$ticket['ticketId']?>&&subject=<?=$ticket['subject']?>"><i class="material-icons" title="Click icon to mark ticket resolved">done_all</i></a></td>
         </tr>
         <?php
         } ?>

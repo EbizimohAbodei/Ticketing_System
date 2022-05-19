@@ -1,8 +1,8 @@
 <?php 
-$hostName = "db";
+$hostName = "eu-cdbr-west-02.cleardb.net";
 $databaseName = "ticketingSystem";
-$dbuser = "root";
-$dbpass = "lionPass";
+$dbuser = "bb1cf7d03be923";
+$dbpass = "8022c686";
 
 // Creating the connection to database
 $connection = new mysqli($hostName, $dbuser, $dbpass, $databaseName);
@@ -15,5 +15,7 @@ function sanitazeInputs($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
+
+mysql://bb1cf7d03be923:8022c686@eu-cdbr-west-02.cleardb.net/heroku_e68e200e7bb6763?reconnect=true
 
 ?>

@@ -171,6 +171,7 @@ td {
 .closeText {
   font-family: "Playfair Display", serif;
   color: #5f9ea0;
+  margin-bottom: 3rem;
 }
 
 /* Styles for create page */
@@ -256,7 +257,7 @@ td {
 /* Styles for page footer */
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 1rem;
