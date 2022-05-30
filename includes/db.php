@@ -1,8 +1,8 @@
 <?php 
-$hostName = "eu-cdbr-west-02.cleardb.net";
+$hostName = "db";
 $databaseName = "ticketingSystem";
-$dbuser = "bb1cf7d03be923";
-$dbpass = "8022c686";
+$dbuser = "root";
+$dbpass = "lionPass";
 
 // Creating the connection to database
 $connection = new mysqli($hostName, $dbuser, $dbpass, $databaseName);
