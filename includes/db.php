@@ -16,6 +16,5 @@ function sanitazeInputs($data) {
     return $data;
 }
 
-mysql://bb1cf7d03be923:8022c686@eu-cdbr-west-02.cleardb.net/heroku_e68e200e7bb6763?reconnect=true
 
 ?>
